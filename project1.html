@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		/* The switch - the box around the slider */
+* {
+box-sizing: border-box;
+}
+body {
+			background-color: lavender;
+			border: 0;
+			text-align: center;
+			color: #737373;
+			font-family: sans-serif;
+			font:arial;
+
+		}
+.div1:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.div1{
+	margin: 5% ;
+	padding-left: 20%;
+}
+
+.div2{
+	
+	background-color: white;
+	float: left;
+	width: 25%;
+	height: 300px;
+	padding: 10px;
+	color: #737373;
+	border-radius: 20px;
+	border-color: transparent;
+	
+	
+}
+.div2 label{
+	font-size: 12px;
+}
+.div2:hover{
+background-image: linear-gradient(#b3b3ff, #8080ff);
+transform: scale(1.1);
+
+}
+.div2:hover label,.div2:hover h1{
+	color: white;
+}
+
+
+button{
+	width: 80%;height: 30px;
+	background-color: #9999ff;
+	color: white;
+	border-radius: 4px;
+}
+
+.div2:hover button{
+	background-color: white;
+	color: #9999ff;
+}
+
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #9b89e8;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #9b89e8;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .div2 {
+    width:100%;
+  }
+	</style>
+	<title>toggle</title>
+</head>
+<body>
+
+	<h1 style="position: center">Our Pricing</h1>
+	<label>Anually</label>
+	<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+<label>Monthly</label>
+<div class="div1">
+	<div class="div2">
+		<label>Basic</label>
+		<h1>$ 19.99</h1>
+		<hr style="color: light grey">
+		<label>500GB storage</label>
+		<hr>
+		<label>2 users Allowed</label>
+		<hr>
+		<label>Send upto 3GB</label>
+		<hr>
+		<BUTTON >Learn More</BUTTON>
+	</div>
+	<div class="div2">
+		<label>Professional</label>
+		<h1>$ 24.99</h1>
+		<hr >
+		<label>1TB storage</label>
+		<hr>
+		<label>5 users Allowed</label>
+		<hr>
+		<label>Send upto 10GB</label>
+		<hr>
+		<BUTTON >Learn More</BUTTON>
+	</div>
+	<div class="div2">
+		<label>Master</label>
+		<h1>$ 39.99</h1>
+		<hr >
+		<label>2TB storage</label>
+		<hr>
+		<label>10 users Allowed</label>
+		<hr>
+		<label>Send upto 20GB</label>
+		<hr>
+		<BUTTON >Learn More</BUTTON>
+	</div>
+</div>
+</body>
+</html>
